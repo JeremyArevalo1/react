@@ -1,6 +1,6 @@
 const api_key = 'fbz4tZ1nIP1PK3IzKb0cgMj2HXzoDyzx'
 const categoria = 'sonic'
-const limit = 20
+const limit = 10
 
 export const reqGif = async(categoria) =>{
     try {
