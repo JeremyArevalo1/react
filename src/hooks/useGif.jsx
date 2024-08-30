@@ -8,8 +8,11 @@ export const useGif = () =>{
 
     const [arregloGifs, setArregloGifs] = useState([])
   
-    const handleGetGif = async () =>{
-      await reqGif().then((arregloGifs)=> {
+    const handleGetGif = async (categoria, e) =>{
+
+      e.preventDeFault()
+
+      await reqGif(categoria).then((arregloGifs)=> {
         setArregloGifs(arregloGifs)
       })
     }

@@ -1,8 +1,8 @@
 const api_key = 'fbz4tZ1nIP1PK3IzKb0cgMj2HXzoDyzx'
-const categoria = 'Messi'
-const limit = 10
+const categoria = 'sonic'
+const limit = 20
 
-export const reqGif = async() =>{
+export const reqGif = async(categoria) =>{
     try {
       const resp = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${categoria}&limit=${limit}`)
       const {data} = await resp.json()
